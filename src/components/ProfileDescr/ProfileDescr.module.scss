@@ -1,0 +1,98 @@
+@import '../../styles/blocks/mixins.scss';
+
+.profileDescr {
+  grid-column: 1/-1;
+
+  @include onDesktop {
+    grid-column: 1/8;
+  }
+
+  .profileGreeting {
+    font-size: 26px;
+    line-height: 24px;
+    color: #e0e0e0;
+
+    margin-bottom: 20px;
+
+    @include onDesktop {
+      font-size: 39px;
+      line-height: 46px;
+
+      margin-bottom: 25px;
+    }
+  }
+
+  .profileName {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+
+    color: #70ff00;
+
+    margin-bottom: 20px;
+
+    @include onDesktop {
+      font-size: 78px;
+      line-height: 91px;
+      letter-spacing: 0.1em;
+
+      margin-bottom: 59px;
+    }
+  }
+
+  .profileRole {
+    font-size: 38px;
+    line-height: 67px;
+
+    color: #e0e0e0;
+
+    margin-bottom: 20px;
+
+    @include onDesktop {
+      font-size: 57px;
+      line-height: 67px;
+
+      margin-bottom: 40px;
+    }
+  }
+
+  .profileExpWrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 46px;
+    }
+    .profileExpItemWrapper {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      .profileYear {
+        font-size: 36px;
+        line-height: 101px;
+
+        color: #4f4f4f;
+
+        @include onDesktop {
+          font-size: 86px;
+          line-height: 101px;
+        }
+      }
+
+      .profileText {
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 32px;
+        text-transform: uppercase;
+
+        color: #828282;
+
+        @include onDesktop {
+        }
+      }
+    }
+  }
+}

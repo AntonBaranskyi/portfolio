@@ -1,0 +1,9 @@
+@import '../../styles/blocks/mixins.scss';
+.about {
+  margin-bottom: 200px;
+  .aboutContent {
+    @include pageGrid();
+
+    align-items: center;
+  }
+}

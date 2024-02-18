@@ -1,0 +1,51 @@
+@import '../../styles/blocks/mixins.scss';
+
+.header {
+  margin-bottom: 50px;
+
+  .paddingContent {
+    padding-inline: 16px;
+
+    @include onTablet {
+      padding-inline: 24px;
+    }
+
+    @include onDesktop {
+      padding-inline: 90px;
+
+      margin-inline: auto;
+
+      margin-bottom: 200px;
+    }
+  }
+  .logo {
+    font-weight: 700;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    color: #828282;
+
+    text-transform: uppercase;
+
+    padding-block: 24px;
+
+    @include onTablet {
+      font-size: 35px;
+    }
+
+    @include onDesktop {
+      line-height: 59px;
+    }
+
+    .logoWhite {
+      color: #fff;
+    }
+  }
+
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

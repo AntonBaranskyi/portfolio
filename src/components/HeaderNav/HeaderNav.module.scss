@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  .navigationItem {
+    list-style: none;
+
+    .navigationLink {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30px;
+
+      color: #ffffff;
+
+      text-decoration: none;
+    }
+  }
+}
