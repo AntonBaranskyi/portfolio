@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './ProfileDescr.module.scss';
 
 const experienceData = [

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './ProfilePhoto.module.scss';
 
 import person from '../../assets/images/person.png';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './MainProfile.module.scss';
 import { ProfileDescr } from '../ProfileDescr';
 import { ProfilePhoto } from '../ProfilePhoto';

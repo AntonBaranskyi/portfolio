@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './AboutRole.module.scss';
 import { AboutRoleItem } from '../AboutRoleItem';
 import { Role } from '../../types/Role';

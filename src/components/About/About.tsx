@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './About.module.scss';
 import { AboutText } from '../AboutText';
 import { AboutRole } from '../AboutRole';

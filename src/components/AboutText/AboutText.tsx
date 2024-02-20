@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './AboutText.module.scss';
 
 export const AboutText = () => {

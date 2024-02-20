@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './HeaderSocial.module.scss';
 
 import linkedin from '../../assets/icons/linkedin.png';
