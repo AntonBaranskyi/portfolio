@@ -1,19 +1,19 @@
 import styles from './Skills.module.scss';
 
 import js from '../../assets/images/skills/js.png';
-import ts from '../../assets/images/skills/ts.png';
+import ts from '../../assets/images/skills/typescript.png';
 import html from '../../assets/images/skills/html.png';
 import css from '../../assets/images/skills/css.png';
-import sass from '../../assets/images/skills/sass.png';
+import sass from '../../assets/images/skills/scss.png';
 import tailwind from '../../assets/images/skills/tailwind.png';
 import react from '../../assets/images/skills/react.png';
-import vue from '../../assets/images/skills/vue.png';
+import vue from '../../assets/images/skills/vue.js.png';
 import vuex from '../../assets/images/skills/vuex.png';
 
 import redux from '../../assets/images/skills/redux.png';
-import node from '../../assets/images/skills/node.png';
+import node from '../../assets/images/skills/node.js.png';
 
-import mongo from '../../assets/images/skills/mongo.png';
+import mongo from '../../assets/images/skills/mongodb.png';
 
 const skillsData = [
   { source: js, alt: 'JavaScript' },
@@ -32,7 +32,7 @@ const skillsData = [
 
 export const Skills = () => {
   return (
-    <div className={styles.skills}>
+    <div className={styles.skills} id='skills'>
       <div className='container'>
         <h2 className={styles.skillsTitle + ' title'}>
           skills<span>( )</span>
@@ -46,7 +46,7 @@ export const Skills = () => {
                 alt={skill.alt}
                 className={styles.skillPhoto}
               />
-               <p className={styles.skillText}>{skill.alt}</p>
+              <p className={styles.skillText}>{skill.alt}</p>
             </div>
           ))}
         </div>
