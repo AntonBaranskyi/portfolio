@@ -6,11 +6,11 @@ import { AboutRole } from '../AboutRole';
 
 export const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id='about'>
       <div className='container'>
         <div className={styles.aboutContent}>
           <AboutText />
-          <AboutRole/>
+          <AboutRole />
         </div>
       </div>
     </div>

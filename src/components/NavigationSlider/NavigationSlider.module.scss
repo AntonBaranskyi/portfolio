@@ -1,0 +1,28 @@
+.navigationWrapper {
+  display: flex;
+
+  gap: 16px;
+
+  .navigationBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-block: 12px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    &:hover {
+      border: 2px solid #70ff00;
+    }
+    &:disabled {
+      background-color: gray;
+
+      cursor: not-allowed;
+    }
+  }
+}

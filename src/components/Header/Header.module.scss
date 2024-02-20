@@ -16,6 +16,10 @@
       margin-inline: auto;
 
       margin-bottom: 200px;
+
+      &[data-project='true'] {
+        margin-bottom: 100px;
+      }
     }
   }
   .logo {
@@ -29,6 +33,8 @@
     text-transform: uppercase;
 
     padding-block: 24px;
+
+    cursor: pointer;
 
     @include onTablet {
       font-size: 35px;

@@ -1,11 +1,23 @@
 .projects {
   padding-top: 109px;
 
-  .projectTitle {
-    margin-bottom: 82px;
+  padding-bottom: 174px;
 
+  .projectsHeaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 82px;
+  }
+
+  .projectTitle {
     span {
       color: #fff;
     }
+  }
+
+  .projectsLoaderWrapper {
+    display: flex;
+    justify-content: center;
   }
 }

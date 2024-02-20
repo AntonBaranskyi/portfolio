@@ -1,0 +1,16 @@
+.breadCumbsWrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 80px;
+
+  .breadCumbsIcon {
+    cursor: pointer;
+  }
+
+  .breadCumbsText {
+    color: #fff;
+  }
+}
