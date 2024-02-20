@@ -1,10 +1,16 @@
+@import '../../styles/blocks/mixins.scss';
+
 .breadCumbsWrapper {
   display: flex;
   align-items: center;
 
   gap: 10px;
 
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+
+  @include onDesktop {
+    margin-bottom: 80px;
+  }
 
   .breadCumbsIcon {
     cursor: pointer;

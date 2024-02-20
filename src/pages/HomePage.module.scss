@@ -1,0 +1,8 @@
+@import '../styles/blocks/mixins.scss';
+
+.topWrapper {
+  margin-bottom: 60px;
+  @include onDesktop {
+    height: 100vh;
+  }
+}

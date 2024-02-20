@@ -5,15 +5,31 @@
     @include pageGrid();
 
     .singlePosterWrapper {
-      grid-column: 1/6;
+      grid-column: 1/-1;
 
       margin-bottom: 60px;
+
+      display: flex;
+      justify-content: center;
+
+      @include onDesktop {
+        grid-column: 1/6;
+        display: block;
+      }
 
       .singlePoster {
         border-radius: 5px;
         height: 400px;
 
-        width: 700px;
+        width: 350px;
+
+        @include onTablet {
+          width: 100%;
+        }
+
+        @include onDesktop {
+          width: 700px;
+        }
 
         border: 2px solid #fff;
         object-fit: cover;
@@ -21,12 +37,20 @@
     }
 
     .mainSingleDesc {
-      grid-column: 8/13;
+      grid-column: 1/-1;
 
       display: flex;
       flex-direction: column;
 
       gap: 15px;
+
+      margin-bottom: 40px;
+
+      @include onDesktop {
+        grid-column: 8/13;
+
+        margin-bottom: 0;
+      }
 
       .mainSingleDescTitle {
         color: #fff;
@@ -67,6 +91,8 @@
 
   .mainSingleProjectDetails {
     grid-column: 1/-1;
+
+    padding-bottom: 40px;
 
     .singleProjectDetailText {
       font-weight: 400;

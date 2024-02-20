@@ -1,10 +1,13 @@
 import { useRef, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import Slider from 'react-slick';
 
 export const useSlider = () => {
   const sliderRef = useRef<Slider | null>(null);
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const isDesktop = useMediaQuery({ minWidth: '1200px' });
+
+  const [currentSlide, setCurrentSlide] = useState(isDesktop ? 1 : 0);
 
   const goToPrevSlide = () => {
     sliderRef?.current?.slickPrev();

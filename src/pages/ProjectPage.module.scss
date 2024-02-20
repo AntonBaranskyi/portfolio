@@ -1,3 +1,13 @@
+@import '../styles/blocks/mixins.scss';
+
+.wrapper {
+  height: 100%;
+
+  @include onDesktop {
+    height: 100vh;
+  }
+}
+
 .loaderWrapper {
   height: 100vh;
 

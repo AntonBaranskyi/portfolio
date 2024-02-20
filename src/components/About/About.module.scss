@@ -1,6 +1,9 @@
 @import '../../styles/blocks/mixins.scss';
 .about {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+  @include onDesktop {
+    margin-bottom: 200px;
+  }
   .aboutContent {
     @include pageGrid();
 

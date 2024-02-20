@@ -30,7 +30,7 @@ export const ProjectPage = () => {
   }
 
   return (
-    <div style={{ height: '100vh' }}>
+    <div className={styles.wrapper}>
       <Header />
 
       <div className='container'>

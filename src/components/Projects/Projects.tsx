@@ -25,7 +25,10 @@ export const Projects = () => {
   const { projects, projectsLoading } = useContext(MainContext);
 
   const settings: Settings = {
-    infinite: false,
+    infinite: true,
+    adaptiveHeight: true,
+    centerMode: true,
+    initialSlide: 1,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -35,6 +38,17 @@ export const Projects = () => {
 
       onSetCurrentSlide(nextSlide);
     },
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 1,
+          initialSlide: 2,
+
+          centerMode: false,
+        },
+      },
+    ],
   };
   return (
     <div className={styles.projects} id='projects'>

@@ -1,9 +1,14 @@
+@import '../../styles/blocks/mixins.scss';
+
 .aboutRoleWrapper {
   display: flex;
   flex-direction: column;
 
   gap: 9px;
 
-  grid-column: 8/13;
+  grid-column: 1/-1;
 
+  @include onDesktop {
+    grid-column: 8/13;
+  }
 }

@@ -16,6 +16,8 @@
   justify-content: center;
   align-items: center;
 
+  margin: 0 auto;
+
   @include onDesktop {
     grid-column: 9/13;
 
@@ -45,22 +47,40 @@
     background: #333333;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.06);
 
-    height: 156px;
-    width: 156px;
+    height: 76px;
+    width: 76px;
 
     border-radius: 50%;
 
     left: 0;
     bottom: 7px;
 
+    @include onDesktop {
+      height: 156px;
+      width: 156px;
+    }
+
     .insideReactWrapper {
       position: relative;
 
-      height: 156px;
-      width: 156px;
+      height: 76px;
+      width: 76px;
+
+      @include onDesktop {
+        height: 156px;
+        width: 156px;
+      }
 
       .insideReactPhoto {
         position: absolute;
+
+        height: 66px;
+        width: 66px;
+
+        @include onDesktop {
+          height: auto;
+          width: auto;
+        }
 
         top: 50%;
         left: 50%;
@@ -75,22 +95,39 @@
     background: #333333;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.06);
 
-    height: 114px;
-    width: 114px;
+    height: 60px;
+    width: 60px;
 
     border-radius: 50%;
 
     bottom: 0;
     right: 32px;
 
+    @include onDesktop {
+      height: 114px;
+      width: 114px;
+    }
+
     .insideTsWrapper {
       position: relative;
 
-      height: 114px;
-      width: 114px;
+      height: 60px;
+      width: 60px;
 
+      @include onDesktop {
+        height: 114px;
+        width: 114px;
+      }
       .insideTsPhoto {
         position: absolute;
+
+        height: 40px;
+        width: 40px;
+
+        @include onDesktop {
+          height: auto;
+          width: auto;
+        }
 
         top: 50%;
         left: 50%;
@@ -105,8 +142,13 @@
     background: #333333;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.06);
 
-    height: 112px;
-    width: 112px;
+    height: 66px;
+    width: 66px;
+
+    @include onDesktop {
+      height: 112px;
+      width: 112px;
+    }
 
     border-radius: 50%;
 
@@ -116,11 +158,24 @@
     .insideNodeWrapper {
       position: relative;
 
-      height: 112px;
-      width: 112px;
+      height: 66px;
+      width: 66px;
+
+      @include onDesktop {
+        height: 112px;
+        width: 112px;
+      }
 
       .insideNodePhoto {
         position: absolute;
+
+        height: 45px;
+        width: 45px;
+
+        @include onDesktop {
+          height: auto;
+          width: auto;
+        }
 
         top: 50%;
         left: 50%;

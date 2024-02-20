@@ -1,9 +1,16 @@
+@import '../../styles/blocks/mixins.scss';
+
 .aboutText {
-  grid-column: 1/8;
+  grid-column: 1/-1;
+
+  margin-bottom: 40px;
+
+  @include onDesktop {
+    grid-column: 1/8;
+    margin-bottom: 0;
+  }
 
   .aboutTitle {
-   
-
     margin-bottom: 36px;
 
     span {

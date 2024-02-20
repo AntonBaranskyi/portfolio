@@ -1,8 +1,9 @@
+@import '../../styles/blocks/mixins.scss';
+
 .aboutRoleItem {
   display: flex;
   justify-content: space-between;
 
-  width: 569px;
   height: 137px;
 
   background: #4f4f4f;
@@ -10,18 +11,34 @@
   border-radius: 6px;
 
   padding-inline: 36px;
-  padding-block: 32px;
+  padding-block: 16px;
+
+  @include onDesktop {
+    width: 569px;
+    height: 137px;
+
+    padding-block: 32px;
+  }
 
   .aboutRoleInfo {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
     .roleInfoTitle {
       font-family: 'Courier Prime', monospace;
 
-      font-size: 33px;
-      line-height: 37px;
+      font-size: 22px;
+      line-height: 28px;
 
       color: #fff;
 
-      margin-bottom: 19px;
+
+      @include onDesktop {
+        font-size: 33px;
+        line-height: 37px;
+      }
     }
 
     .roleInfoSpan {
