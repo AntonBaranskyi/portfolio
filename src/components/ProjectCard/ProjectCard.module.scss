@@ -26,7 +26,7 @@
     height: 361px;
   }
 
-  @include onDesktop {
+  @media (min-width: 1615px) {
     width: 600px;
     height: 361px;
   }
