@@ -14,12 +14,14 @@
 
   transition: border-color 0.5s ease;
 
+  @include hover(transform, scale(1.003));
+
   @include onTablet {
     width: 360px;
     height: 361px;
   }
 
-  @include onSmallDesktop {
+  @media (min-width: 1315px) {
     width: 450px;
     height: 361px;
   }

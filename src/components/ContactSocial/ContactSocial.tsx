@@ -4,7 +4,7 @@ import telegram from '../../assets/images/telegram.png';
 import linkedin from '../../assets/images/linkedin.png';
 import gitHub from '../../assets/images/gitHub.png';
 
-export const socialData = [
+const socialData = [
   {
     image: telegram,
     nickname: '@baranskyi_03',

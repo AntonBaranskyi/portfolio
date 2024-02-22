@@ -5,8 +5,18 @@
 @import './blocks/input.scss';
 @import './blocks/button.scss';
 
-.slick-list {
-  & .slick-slide > div {
-    padding: 0 2px;
+@include onDesktop {
+  .slick-list {
+    & .slick-slide > div {
+      padding: 0 100px;
+    }
+  }
+}
+
+@include onSmallDesktop {
+  .slick-list {
+    & .slick-slide > div {
+      padding: 0 5px;
+    }
   }
 }

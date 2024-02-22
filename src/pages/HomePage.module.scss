@@ -3,10 +3,16 @@
 .topWrapper {
   margin-bottom: 60px;
   @include onTablet {
-    height:100%;
+    height: 100%;
   }
 
   @include onSmallDesktop {
-    height:100vh;
+    height: 100vh;
+
+    margin-bottom: 200px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 0;
   }
 }

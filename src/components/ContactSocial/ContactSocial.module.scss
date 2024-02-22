@@ -3,12 +3,8 @@
 .contactSocial {
   grid-column: 1/-1;
 
-  padding-bottom: 80px;
-
   @include onSmallDesktop {
     grid-column: 8/12;
-
-    padding-bottom: 0;
   }
 
   .contactSocialTitle {
@@ -24,6 +20,10 @@
     flex-direction: column;
     gap: 15px;
 
+    @include onDesktop {
+      gap: 30px;
+    }
+
     .contactSocialItem {
       display: flex;
       align-items: center;
@@ -32,6 +32,8 @@
       text-decoration: none;
 
       width: fit-content;
+
+      @include hover(transform, scale(1.05));
 
       .contactSocialImage {
         height: 80px;

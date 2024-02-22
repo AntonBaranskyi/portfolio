@@ -6,8 +6,18 @@ import gaps from '../../assets/icons/gaps.png';
 import brackets from '../../assets/icons/brackets.png';
 
 const roleData: Role[] = [
-  { title: 'Fullstack Developer', link: 'Projects', icon: gaps },
-  { title: 'Freelancer', link: 'Hire me', icon: brackets },
+  {
+    title: 'Fullstack Developer',
+    text: 'Projects',
+    link: '#projects',
+    icon: gaps,
+  },
+  {
+    title: 'Freelancer',
+    text: 'Hire me',
+    link: '#contactMe',
+    icon: brackets,
+  },
 ];
 
 export const AboutRole = () => {

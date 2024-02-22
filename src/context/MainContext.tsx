@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { Project } from '../types/Project';
 import { getAllProjects, getSingleProject } from '../api/projectsAPI';
+import { useMediaQuery } from 'react-responsive';
 
 type ContextState = {
   projects: Project[];
@@ -33,6 +34,14 @@ export const MainProvider: React.FC<Props> = ({ children }) => {
 
   const [projectsLoading, setProjectsLoading] = useState(false);
   const [singleProjectLoading, setSingleProjectLoading] = useState(false);
+
+  const isDesktop = useMediaQuery({ minWidth: '1200px' });
+
+  useEffect(() => {
+    if (isDesktop) {
+      setIsBurgerOpen(false);
+    }
+  }, [isDesktop]);
 
   const handleFetchSingleProject = (id: number) => {
     setSingleProjectLoading(true);
