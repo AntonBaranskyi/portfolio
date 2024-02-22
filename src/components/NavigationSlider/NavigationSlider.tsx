@@ -4,7 +4,6 @@ import styles from './NavigationSlider.module.scss';
 
 import arrowLeft from '../../assets/icons/arrowLeft.png';
 import arrowRight from '../../assets/icons/arrowRight.png';
-import { useMediaQuery } from 'react-responsive';
 
 type Props = {
   goToNextSlide: () => void;
