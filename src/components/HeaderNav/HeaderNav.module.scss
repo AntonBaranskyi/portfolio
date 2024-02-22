@@ -3,6 +3,12 @@
   gap: 50px;
   align-items: center;
 
+  &[data-isOpen='true'] {
+    flex-direction: column;
+
+    margin-bottom: 60px;
+  }
+
   .navigationItem {
     list-style: none;
 

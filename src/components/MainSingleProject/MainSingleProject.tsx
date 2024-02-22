@@ -36,7 +36,7 @@ export const MainSingleProject: React.FC<Props> = ({ singleProject }) => {
               {singleProject.stack.map((skill) => (
                 <div key={skill} className={styles.skillWrapper}>
                   <img
-                    src={`/src/assets/images/skills/${skill.toLowerCase()}.png`}
+                    src={`/skills/${skill.toLowerCase()}.png`}
                     alt={skill}
                     className='icon-lg'
                   />

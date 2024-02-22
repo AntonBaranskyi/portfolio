@@ -7,12 +7,15 @@ export const AboutText = () => {
         aboutMe<span>( )</span>
       </h2>
       <p className={styles.aboutText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer velit
-        turpis, finibus eu condimentum ut, posuere at ipsum. Maecenas vel
-        consequat mauris. Quisque sodales ipsum aliquet aliquam placerat. Proin
-        varius condimentum sapien. Mauris quis elit nibh. Morbi ut facilisis
-        nisl. Duis et leo ut odio rhoncus porta a a dui. Nullam arcu nibh,
-        bibendum in enim sed, ullamcorper feugiat nunc.
+        I am a dedicated FullStack developer with one year of practical
+        experience, strong computer science foundations, and expertise in
+        HTML/CSS, JavaScript, Vue, and TypeScript, with a focus on React +
+        TypeScript. I am adaptable and open to learning new technologies. With
+        an upper-intermediate level of English, I can seamlessly collaborate
+        with English-speaking teams. In addition to my technical skills, I have
+        a well-rounded background, including participation in mathematics and
+        English competitions that highlight my problem-solving and communication
+        abilities.
       </p>
     </div>
   );

@@ -1,8 +1,8 @@
 import styles from './ProfileDescr.module.scss';
 
 const experienceData = [
-  { num: '5', text: 'years of experience' },
-  { num: '13', text: 'completed projects using differnt stack' },
+  { num: '1', text: 'year of experience' },
+  { num: '9', text: 'completed projects using differnt stack' },
 ];
 
 export const ProfileDescr = () => {

@@ -42,6 +42,16 @@ export const Projects = () => {
       {
         breakpoint: 1500,
         settings: {
+          slidesToShow: 2,
+          initialSlide: 2,
+
+          centerMode: true,
+        },
+      },
+
+      {
+        breakpoint: 820,
+        settings: {
           slidesToShow: 1,
           initialSlide: 2,
 
@@ -66,19 +76,19 @@ export const Projects = () => {
             />
           )}
         </div>
-
-        {projectsLoading ? (
-          <div className={styles.projectsLoaderWrapper}>
-            <RingLoader color='#fff' size={80} />
-          </div>
-        ) : (
-          <Slider {...settings} ref={sliderRef}>
-            {projects.map((project) => (
-              <ProjectCard project={project} key={project.id} />
-            ))}
-          </Slider>
-        )}
       </div>
+
+      {projectsLoading ? (
+        <div className={styles.projectsLoaderWrapper}>
+          <RingLoader color='#fff' size={80} />
+        </div>
+      ) : (
+        <Slider {...settings} ref={sliderRef}>
+          {projects.map((project) => (
+            <ProjectCard project={project} key={project.id} />
+          ))}
+        </Slider>
+      )}
     </div>
   );
 };

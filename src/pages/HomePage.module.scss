@@ -2,7 +2,11 @@
 
 .topWrapper {
   margin-bottom: 60px;
+  @include onTablet {
+    height:100%;
+  }
+
   @include onDesktop {
-    height: 100vh;
+    height:100vh;
   }
 }

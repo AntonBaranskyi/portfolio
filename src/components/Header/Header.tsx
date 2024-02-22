@@ -4,9 +4,13 @@ import { HeaderSocial } from '../HeaderSocial';
 import { useMediaQuery } from 'react-responsive';
 
 import burger from '../../assets/icons/burger.png';
+import close from '../../assets/icons/close.png';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { MainContext } from '../../context/MainContext';
 
 export const Header = () => {
+  const { handleBurgerToggle, isBurgerOpen } = useContext(MainContext);
   const isDesktop = useMediaQuery({ minWidth: '1200px' });
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -33,8 +37,20 @@ export const Header = () => {
               {!isProjectPage && <HeaderNav />}
               <HeaderSocial />
             </>
+          ) : isBurgerOpen ? (
+            <img
+              src={close}
+              alt='close'
+              className='icon'
+              onClick={handleBurgerToggle}
+            />
           ) : (
-            <img src={burger} alt='burger' className='icon' />
+            <img
+              src={burger}
+              alt='burger'
+              className='icon'
+              onClick={handleBurgerToggle}
+            />
           )}
         </div>
       </div>

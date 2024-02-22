@@ -4,6 +4,10 @@
 
   align-items: center;
 
+  &[data-isOpen='true'] {
+    flex-direction: column;
+  }
+
   .socialItemRegular {
     display: flex;
     gap: 12px;

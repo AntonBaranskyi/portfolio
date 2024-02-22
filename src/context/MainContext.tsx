@@ -8,6 +8,8 @@ type ContextState = {
   currentProject: Project | null;
   singleProjectLoading: boolean;
   handleFetchSingleProject: (id: number) => void;
+  handleBurgerToggle: () => void;
+  isBurgerOpen: boolean;
 };
 
 export const MainContext = createContext<ContextState>({
@@ -16,6 +18,8 @@ export const MainContext = createContext<ContextState>({
   currentProject: null,
   singleProjectLoading: false,
   handleFetchSingleProject: () => {},
+  handleBurgerToggle: () => {},
+  isBurgerOpen: false,
 });
 
 type Props = {
@@ -25,6 +29,7 @@ type Props = {
 export const MainProvider: React.FC<Props> = ({ children }) => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [currentProject, setCurrentProject] = useState<Project | null>(null);
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
   const [projectsLoading, setProjectsLoading] = useState(false);
   const [singleProjectLoading, setSingleProjectLoading] = useState(false);
@@ -47,6 +52,10 @@ export const MainProvider: React.FC<Props> = ({ children }) => {
       });
   };
 
+  const handleBurgerToggle = () => {
+    setIsBurgerOpen((prev) => !prev);
+  };
+
   useEffect(() => {
     handleFetchProjectsData();
   }, []);
@@ -57,6 +66,8 @@ export const MainProvider: React.FC<Props> = ({ children }) => {
     currentProject,
     singleProjectLoading,
     handleFetchSingleProject,
+    isBurgerOpen,
+    handleBurgerToggle,
   };
 
   return <MainContext.Provider value={value}>{children}</MainContext.Provider>;

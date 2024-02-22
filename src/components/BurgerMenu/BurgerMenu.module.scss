@@ -1,0 +1,27 @@
+.burgerMenu {
+  height: 100vh;
+  overflow: hidden;
+
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 3;
+
+  width: 100%;
+
+  background: linear-gradient(
+    130.36deg,
+    #000000 0%,
+    #272727 44.03%,
+    #494949 99.99%,
+    #727272 100%
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  transform: translateX(0);
+  transition: all 1s;
+}

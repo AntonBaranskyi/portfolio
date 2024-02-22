@@ -3,6 +3,8 @@ import styles from './HeaderSocial.module.scss';
 import linkedin from '../../assets/icons/linkedin.png';
 import gitHub from '../../assets/icons/git.png';
 import message from '../../assets/icons/message.png';
+import { useContext } from 'react';
+import { MainContext } from '../../context/MainContext';
 
 const socialData = [
   {
@@ -23,8 +25,13 @@ const socialData = [
 ];
 
 export const HeaderSocial = () => {
+  const { isBurgerOpen } = useContext(MainContext);
+
   return (
-    <div className={styles.headerSocial}>
+    <div
+      className={styles.headerSocial}
+      data-isOpen={isBurgerOpen ? 'true' : 'false'}
+    >
       {socialData.map((social) =>
         social.title !== 'Contact me' ? (
           <a
