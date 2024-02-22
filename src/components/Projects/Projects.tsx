@@ -19,7 +19,6 @@ export const Projects = () => {
     goToNextSlide,
     goToPrevSlide,
     onSetCurrentSlide,
-    currentSlide,
   } = useSlider();
 
   const { projects, projectsLoading } = useContext(MainContext);
@@ -43,7 +42,7 @@ export const Projects = () => {
         breakpoint: 1500,
         settings: {
           slidesToShow: 2,
-          initialSlide: 2,
+          initialSlide: 3,
 
           centerMode: true,
         },
@@ -51,6 +50,16 @@ export const Projects = () => {
 
       {
         breakpoint: 820,
+        settings: {
+          slidesToShow: 1,
+          initialSlide: 2,
+
+          centerMode: true,
+        },
+      },
+
+      {
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           initialSlide: 2,
@@ -72,23 +81,22 @@ export const Projects = () => {
             <NavigationSlider
               goToNextSlide={goToNextSlide}
               goToPrevSlide={goToPrevSlide}
-              currentSlide={currentSlide}
             />
           )}
         </div>
-      </div>
 
-      {projectsLoading ? (
-        <div className={styles.projectsLoaderWrapper}>
-          <RingLoader color='#fff' size={80} />
-        </div>
-      ) : (
-        <Slider {...settings} ref={sliderRef}>
-          {projects.map((project) => (
-            <ProjectCard project={project} key={project.id} />
-          ))}
-        </Slider>
-      )}
+        {projectsLoading ? (
+          <div className={styles.projectsLoaderWrapper}>
+            <RingLoader color='#fff' size={80} />
+          </div>
+        ) : (
+          <Slider {...settings} ref={sliderRef}>
+            {projects.map((project) => (
+              <ProjectCard project={project} key={project.id} />
+            ))}
+          </Slider>
+        )}
+      </div>
     </div>
   );
 };

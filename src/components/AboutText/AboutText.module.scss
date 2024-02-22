@@ -5,7 +5,7 @@
 
   margin-bottom: 40px;
 
-  @include onDesktop {
+  @include onSmallDesktop {
     grid-column: 1/8;
     margin-bottom: 0;
   }

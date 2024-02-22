@@ -8,7 +8,7 @@
 
   grid-column: 1/-1;
 
-  @include onDesktop {
+  @include onSmallDesktop {
     grid-column: 8/13;
   }
 }

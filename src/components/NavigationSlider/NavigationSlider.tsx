@@ -9,31 +9,19 @@ import { useMediaQuery } from 'react-responsive';
 type Props = {
   goToNextSlide: () => void;
   goToPrevSlide: () => void;
-  currentSlide: number;
 };
 
 export const NavigationSlider: React.FC<Props> = ({
   goToPrevSlide,
   goToNextSlide,
-  currentSlide,
 }) => {
-  const isDesktop = useMediaQuery({ minWidth: '1200px' });
-
   return (
     <div className={styles.navigationWrapper}>
-      <button
-        className={styles.navigationBtn}
-        onClick={goToPrevSlide}
-        disabled={currentSlide === (isDesktop ? 1 : 0)}
-      >
+      <button className={styles.navigationBtn} onClick={goToPrevSlide}>
         <img src={arrowLeft} alt='left' className='icon' />
       </button>
 
-      <button
-        className={styles.navigationBtn}
-        onClick={goToNextSlide}
-        disabled={currentSlide === 6}
-      >
+      <button className={styles.navigationBtn} onClick={goToNextSlide}>
         <img src={arrowRight} alt='right' className='icon' />
       </button>
     </div>

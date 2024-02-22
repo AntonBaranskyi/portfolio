@@ -13,7 +13,7 @@
   padding-inline: 36px;
   padding-block: 16px;
 
-  @include onDesktop {
+  @include onSmallDesktop {
     width: 569px;
     height: 137px;
 
@@ -35,7 +35,7 @@
       color: #fff;
 
 
-      @include onDesktop {
+      @include onSmallDesktop {
         font-size: 33px;
         line-height: 37px;
       }

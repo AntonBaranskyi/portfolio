@@ -1,7 +1,7 @@
 @import '../../styles/blocks/mixins.scss';
 .about {
   margin-bottom: 50px;
-  @include onDesktop {
+  @include onSmallDesktop {
     margin-bottom: 200px;
   }
   .aboutContent {

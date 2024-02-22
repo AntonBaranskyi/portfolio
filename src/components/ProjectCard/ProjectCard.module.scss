@@ -14,6 +14,16 @@
 
   transition: border-color 0.5s ease;
 
+  @include onTablet {
+    width: 360px;
+    height: 361px;
+  }
+
+  @include onSmallDesktop {
+    width: 450px;
+    height: 361px;
+  }
+
   @include onDesktop {
     width: 600px;
     height: 361px;
@@ -27,6 +37,12 @@
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     border-radius: 14px;
+
+    object-fit: cover;
+
+    @include onSmallDesktop {
+      object-fit: fill;
+    }
   }
 
   .photoMore {

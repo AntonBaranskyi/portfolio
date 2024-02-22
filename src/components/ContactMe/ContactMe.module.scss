@@ -1,0 +1,18 @@
+@import '../../styles/blocks/mixins.scss';
+
+.contactMe {
+  padding-top: 48px;
+  background-color: #161616;
+
+  .contactTitle {
+    padding-bottom: 30px;
+
+    @include onSmallDesktop {
+      padding-bottom: 80px;
+    }
+  }
+
+  .contactMeContent {
+    @include pageGrid();
+  }
+}

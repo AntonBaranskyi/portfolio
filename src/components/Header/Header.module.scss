@@ -10,7 +10,7 @@
       padding-inline: 24px;
     }
 
-    @include onDesktop {
+    @include onSmallDesktop {
       padding-inline: 90px;
 
       margin-inline: auto;
@@ -40,7 +40,7 @@
       font-size: 35px;
     }
 
-    @include onDesktop {
+    @include onSmallDesktop {
       line-height: 59px;
     }
 

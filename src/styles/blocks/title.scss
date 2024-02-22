@@ -1,6 +1,14 @@
 .title {
-  font-size: 49px;
+  font-size: 39px;
   line-height: 57px;
 
   color: #70ff00;
+
+  @include onTablet {
+    font-size: 49px;
+  }
+
+  span {
+    color: #fff;
+  }
 }

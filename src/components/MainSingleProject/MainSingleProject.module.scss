@@ -12,7 +12,7 @@
       display: flex;
       justify-content: center;
 
-      @include onDesktop {
+      @include onSmallDesktop {
         grid-column: 1/6;
         display: block;
       }
@@ -27,7 +27,7 @@
           width: 100%;
         }
 
-        @include onDesktop {
+        @include onSmallDesktop {
           width: 700px;
         }
 
@@ -46,7 +46,7 @@
 
       margin-bottom: 40px;
 
-      @include onDesktop {
+      @include onSmallDesktop {
         grid-column: 8/13;
 
         margin-bottom: 0;

@@ -3,7 +3,7 @@
 .profileDescr {
   grid-column: 1/-1;
 
-  @include onDesktop {
+  @include onSmallDesktop {
     grid-column: 1/8;
   }
 
@@ -14,7 +14,7 @@
 
     margin-bottom: 20px;
 
-    @include onDesktop {
+    @include onSmallDesktop {
       font-size: 39px;
       line-height: 46px;
 
@@ -31,7 +31,7 @@
 
     margin-bottom: 20px;
 
-    @include onDesktop {
+    @include onSmallDesktop {
       font-size: 78px;
       line-height: 91px;
       letter-spacing: 0.1em;
@@ -48,7 +48,7 @@
 
     margin-bottom: 20px;
 
-    @include onDesktop {
+    @include onSmallDesktop {
       font-size: 57px;
       line-height: 67px;
 
@@ -61,7 +61,7 @@
 
     flex-direction: column;
 
-    @include onDesktop {
+    @include onSmallDesktop {
       flex-direction: row;
       gap: 46px;
     }
@@ -76,7 +76,7 @@
 
         color: #4f4f4f;
 
-        @include onDesktop {
+        @include onSmallDesktop {
           font-size: 86px;
           line-height: 101px;
         }
@@ -90,7 +90,7 @@
 
         color: #828282;
 
-        @include onDesktop {
+        @include onSmallDesktop {
         }
       }
     }

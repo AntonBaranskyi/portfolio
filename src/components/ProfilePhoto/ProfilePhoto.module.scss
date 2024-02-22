@@ -18,7 +18,7 @@
 
   margin: 0 auto;
 
-  @include onDesktop {
+  @include onSmallDesktop {
     grid-column: 9/13;
 
     width: 526px;
@@ -35,7 +35,7 @@
     left: 52%;
     transform: translate(-50%, -50%);
 
-    @include onDesktop {
+    @include onSmallDesktop {
       height: 500px;
       width: 519px;
     }
@@ -55,7 +55,7 @@
     left: 0;
     bottom: 7px;
 
-    @include onDesktop {
+    @include onSmallDesktop {
       height: 156px;
       width: 156px;
     }
@@ -66,7 +66,7 @@
       height: 76px;
       width: 76px;
 
-      @include onDesktop {
+      @include onSmallDesktop {
         height: 156px;
         width: 156px;
       }
@@ -77,7 +77,7 @@
         height: 66px;
         width: 66px;
 
-        @include onDesktop {
+        @include onSmallDesktop {
           height: auto;
           width: auto;
         }
@@ -103,7 +103,7 @@
     bottom: 0;
     right: 32px;
 
-    @include onDesktop {
+    @include onSmallDesktop {
       height: 114px;
       width: 114px;
     }
@@ -114,7 +114,7 @@
       height: 60px;
       width: 60px;
 
-      @include onDesktop {
+      @include onSmallDesktop {
         height: 114px;
         width: 114px;
       }
@@ -124,7 +124,7 @@
         height: 40px;
         width: 40px;
 
-        @include onDesktop {
+        @include onSmallDesktop {
           height: auto;
           width: auto;
         }
@@ -145,7 +145,7 @@
     height: 66px;
     width: 66px;
 
-    @include onDesktop {
+    @include onSmallDesktop {
       height: 112px;
       width: 112px;
     }
@@ -161,7 +161,7 @@
       height: 66px;
       width: 66px;
 
-      @include onDesktop {
+      @include onSmallDesktop {
         height: 112px;
         width: 112px;
       }
@@ -172,7 +172,7 @@
         height: 45px;
         width: 45px;
 
-        @include onDesktop {
+        @include onSmallDesktop {
           height: auto;
           width: auto;
         }

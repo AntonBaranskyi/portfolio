@@ -44,14 +44,18 @@ export const HeaderSocial = () => {
             <h4>{social.title}</h4>
           </a>
         ) : (
-          <button key={social.title} className={styles.socialButton}>
+          <a
+            key={social.title}
+            className={styles.socialButton}
+            href='#contactMe'
+          >
             <img
               src={social.icon}
               alt={social.title}
               className={styles.socialIcon}
             />
             <h5>{social.title}</h5>
-          </button>
+          </a>
         )
       )}
     </div>

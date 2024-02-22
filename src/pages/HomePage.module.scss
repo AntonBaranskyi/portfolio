@@ -6,7 +6,7 @@
     height:100%;
   }
 
-  @include onDesktop {
+  @include onSmallDesktop {
     height:100vh;
   }
 }
