@@ -1,9 +1,48 @@
+@import '../../styles/blocks/mixins.scss';
+
 .contactSocial {
-  grid-column: 8/12;
+  grid-column: 1/-1;
+
+  padding-bottom: 80px;
+
+  @include onSmallDesktop {
+    grid-column: 8/12;
+
+    padding-bottom: 0;
+  }
 
   .contactSocialTitle {
     color: #f2f2f2;
 
     text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+
+  .contactSocialWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .contactSocialItem {
+      display: flex;
+      align-items: center;
+
+      gap: 20px;
+      text-decoration: none;
+
+      width: fit-content;
+
+      .contactSocialImage {
+        height: 80px;
+        width: 80px;
+      }
+
+      .contactSocialNickName {
+        color: #f2f2f2;
+
+        font-size: 28px;
+      }
+    }
   }
 }

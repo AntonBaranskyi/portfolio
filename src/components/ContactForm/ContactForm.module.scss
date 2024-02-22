@@ -21,5 +21,11 @@
     .formTextArea {
       resize: none;
     }
+
+    .formError {
+      display: block;
+      padding-top: 4px;
+      color: red;
+    }
   }
 }
