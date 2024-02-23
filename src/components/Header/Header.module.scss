@@ -6,6 +6,9 @@
   .paddingContent {
     padding-inline: 16px;
 
+    max-width: 1728px;
+
+
     @include onTablet {
       padding-inline: 24px;
     }
