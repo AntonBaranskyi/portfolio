@@ -9,7 +9,17 @@ const navigationData = [
 ];
 
 export const HeaderNav = () => {
-  const { isBurgerOpen } = useContext(MainContext);
+  const { isBurgerOpen, handleBurgerToggle } = useContext(MainContext);
+
+  const handleRedirect = (href: string) => {
+    if (isBurgerOpen) {
+      handleBurgerToggle();
+    }
+
+    const section = document.querySelector(href);
+
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <nav>
@@ -19,7 +29,10 @@ export const HeaderNav = () => {
       >
         {navigationData.map((nav) => (
           <li key={nav.title} className={styles.navigationItem}>
-            <a className={styles.navigationLink} href={nav.href}>
+            <a
+              className={styles.navigationLink}
+              onClick={() => handleRedirect(nav.href)}
+            >
               {nav.title}
             </a>
           </li>
